@@ -1,5 +1,5 @@
 package org.omarelabdi.mowitnow;
-
+// Gère la position, l’orientation et les déplacements d’une tondeuse.
 public class Tondeuse {
 
     private int x;
@@ -11,6 +11,9 @@ public class Tondeuse {
         this.y = y;
         this.orientation = orientation;
     }
+
+/* Exécute les instructions dans l’ordre.
+/ Si un déplacement sort de la pelouse, il est ignoré.*/
 
     public void executer(String instructions, Pelouse pelouse) {
         for (char instruction : instructions.toCharArray()) {
@@ -25,6 +28,7 @@ public class Tondeuse {
         }
     }
 
+// Avance d’une case selon l’orientation actuelle.
     private void avancer(Pelouse pelouse) {
         int nouveauX = x;
         int nouveauY = y;

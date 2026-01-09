@@ -1,5 +1,5 @@
 package org.omarelabdi.mowitnow;
-
+// Orientation actuelle de la tondeuse et logique de rotation gauche/droite.
 public enum Orientation {
     N, E, S, W;
 

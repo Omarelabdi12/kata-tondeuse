@@ -3,8 +3,10 @@ package org.omarelabdi.mowitnow;
 import java.util.ArrayList;
 import java.util.List;
 
+// Lecture et interprétation du fichier d’entrée du kata.
 public class LecteurEntree {
 
+    // Lance l’exécution des tondeuses à partir des lignes du fichier.
     public List<String> executer(List<String> lignes) {
         List<String> propres = lignes.stream()
                 .map(String::trim)
